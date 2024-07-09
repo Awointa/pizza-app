@@ -74,7 +74,7 @@ function Menu() {
 		<main className="menu">
 			<h2>Our Menu</h2>
 			<ul className="pizzas">
-				{pizzaLength &&
+				{pizzaLength > 0 &&
 					pizzas.map((pizza) => <Pizza pizzaObject={pizza} key={pizza.name} />)}
 			</ul>
 			{/*<Pizza
