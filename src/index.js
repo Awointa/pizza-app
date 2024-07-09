@@ -70,11 +70,11 @@ function Menu() {
 	return (
 		<main className="menu">
 			<h2>Our Menu</h2>
-			<div>
+			<ul className="pizzas">
 				{pizzaData.map((pizza) => (
 					<Pizza pizzaObject={pizza} key={pizza.name}/>
 				))}
-			</div>
+			</ul>
 			{/*<Pizza
 				name="pizza spinacci"
 				ingredients="Tomato, mozarella, spinach, and ricotta cheese"
