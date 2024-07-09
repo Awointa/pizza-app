@@ -67,8 +67,8 @@ function Header() {
 }
 
 function Menu() {
-	const pizzas = pizzaData;
-	// const pizzas = []
+	// const pizzas = pizzaData;
+	const pizzas = []
 	const pizzaLength = pizzas.length;
 	return (
 		<main className="menu">
@@ -78,7 +78,7 @@ function Menu() {
 					? pizzas.map((pizza) => (
 							<Pizza pizzaObject={pizza} key={pizza.name} />
 					  ))
-					: ""}
+					: null}
 			</ul>
 			{/*<Pizza
 				name="pizza spinacci"
